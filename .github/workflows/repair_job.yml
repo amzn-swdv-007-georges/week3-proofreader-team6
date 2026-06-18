@@ -1,7 +1,13 @@
-name: Broken Press Schematic
+name: Repaired Press Schematic
 
-on: 
+on:
+  push:
+    branches:
+      - main
+
   pull_request:
+    branches:
+      - main
 
 jobs:
   repair-check:
